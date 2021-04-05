@@ -44,3 +44,4 @@ Finally we run the application from our container using the command
 ```
 docker run-it --name money_api_2 --rm -p 5000:5000 money_api_2
 ```
+Open http://localhost:5000/apidocs/ to run the app. 
