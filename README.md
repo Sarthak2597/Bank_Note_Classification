@@ -30,3 +30,17 @@ RandomForest Classifier from Sci-kit Learn.
 ### API:
 
 Using Flask and Flassger
+
+### Creating image, building containers and Running docker container:
+
+We first create a [Dockerfile](https://github.com/Sarthak2597/Bank_Note_Classification/blob/main/Dockerfile) in our working directory, with Debian base image. We then navigate to our working directory and use the following command in Command Prompt (in Docker for Desktop) or Docker Quickstart terminal (Docker toolkit) to build a container.
+
+```
+docker build --tag money_api_2 .
+```
+
+Finally we run the application from our container using the command 
+
+```
+docker run-it --name money_api_2 --rm -p 5000:5000 money_api_2
+```
